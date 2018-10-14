@@ -176,4 +176,42 @@ body{
     .cursos__columnas {
         width: 48%;
     }
+    .footer .social [class^="icon-"]{
+        margin: 0 10px;
+    }
+}
+@media(min-width:768px){
+    .banner__titulo{
+        font-size: 40px;
+    }
+    .cursos__titulo{
+        font-size: 38px;
+    }
+}
+@media(min-width:1024px){
+    .nav{
+        position: static;
+        width: auto;
+    }
+    .menu{
+        display: flex;
+    }
+    .menu__link{
+        background: none;
+        font-size: 20px;
+    }
+    .select{
+        color: #fff;
+        background: #fba919;
+    }
+    .icon-menu{
+        display: none;
+    }
+
+    .banner__titulo{
+        font-size: 60px;
+    }
+    .cursos__titulo{
+        font-size: 50px;
+    }
 }
