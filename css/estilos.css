@@ -14,7 +14,10 @@ body{
     font-size: 40px;
     color: #FBA919;
 }
-
+.contenedor{
+    margin: auto;
+    width: 98%
+}
 /*----------------  Estilos del Header  ----------------*/
 .header{
     height: 60px;
@@ -37,6 +40,7 @@ body{
     border-radius: 5px;
     margin-left: auto;
     cursor: pointer;
+    padding: 4px;
     
 }
 /* --------------------estilos del menu--------------------*/
@@ -100,6 +104,7 @@ body{
 .cursos__columnas{
     position: relative;
     margin-bottom: 30px;
+    margin: 10px;
 }
 .cursos__description{
     position: absolute;
@@ -115,6 +120,9 @@ body{
     font-size: 25px;
     margin: 5px 0;
     
+}
+.cursos__img{
+    width: 100%;
 }
 
 /*-------------------Estilos de footer---------------------*/
@@ -189,6 +197,13 @@ body{
     }
 }
 @media(min-width:1024px){
+    .contenedor{
+    width: 1000px
+    }
+    .section__titulo{
+        font-size: 50px;
+        margin: 30px;
+    }
     .nav{
         position: static;
         width: auto;
@@ -211,7 +226,28 @@ body{
     .banner__titulo{
         font-size: 60px;
     }
+    .info__titulo{
+        font-size: 48px;
+        text-align: center;
+    }
+    .info__columna{
+        padding: 30px;
+    }
     .cursos__titulo{
         font-size: 50px;
+    }
+}
+@media(min-width:1280px){
+    .contenedor{
+        width: 1200px;
+    }
+    .logo{
+        font-size: 70px;
+    }
+    .banner .contenedor{
+        top: 40%;
+    }
+    .info{
+
     }
 }
