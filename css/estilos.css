@@ -136,6 +136,8 @@ body{
     width: 100%;
 }
 
+
+
 .formul{
     width: 30%;
     margin: auto;
@@ -156,7 +158,7 @@ body{
 .formul_item_in {
     border-radius: 14px;
     border: 1px solid #FBA919;
-    padding: 5%;
+    padding: 4%;
 }
 .formul_item_sub{
     border-radius: 14px;
@@ -208,6 +210,23 @@ body{
 }
 
 /*-------------------Estilos de responsive---------------------*/
+@media(max-width:480px){
+
+    .registro{
+        width: 82%;
+
+    }
+    .formul{
+        width: 100%;
+        padding: 3%;
+    }
+    .formul_items{
+    display: grid;
+    grid-template-columns: repeat(2,60%);
+    grid-template-rows: repeat(14,40px) ;
+    grid-gap: 3px;
+    }
+    }
 
 @media(min-width:480px){
     .logo {
@@ -249,6 +268,19 @@ body{
     .footer .social [class^="icon-"]{
         margin: 0 10px;
 
+    }
+    .registro{
+        width: 80%;
+
+    }
+    .formul{
+        width: 80%;
+    }
+    .formul_items{
+    display: grid;
+    grid-template-columns: repeat(2,60%);
+    grid-template-rows: repeat(14,40px) ;
+    grid-gap: 3px;
     }
 
     }
@@ -314,4 +346,5 @@ body{
     .info{
 
     }
+
 }
