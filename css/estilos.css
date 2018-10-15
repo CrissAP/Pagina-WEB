@@ -41,6 +41,11 @@ body{
     margin-left: auto;
     cursor: pointer;
     padding: 4px;
+
+    position: fixed;
+    top:0px;
+    right: 0px;
+    z-index: 10;
     
 }
 /* --------------------estilos del menu--------------------*/
@@ -48,8 +53,14 @@ body{
     position: absolute;
     top: 60px;
     left: -100%;
-    width: 100%;
+    width: 40%;
     transition: all 0.4s;
+
+    position: fixed;
+    top:60px;
+    right: 0px;
+    z-index: 9;
+    transform: translate(0px);
 }
 .menu{
     list-style: none;
@@ -124,6 +135,50 @@ body{
 .cursos__img{
     width: 100%;
 }
+
+.formul{
+    width: 40%;
+    margin: auto;
+}
+.formul_items{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(14,40px) ;
+    grid-gap: 3px;
+}
+.formul_item_in {
+    border-radius: 14px;
+    border: 1px solid #FBA919;
+    padding: 5%;
+}
+.formul_item_sub{
+    border-radius: 14px;
+    border: 1px solid #FBA919;
+    margin: 10px;
+    width: 60%;
+    height: 40px;
+    background: #FFF;
+    color: #FBA919;
+    position: relative;
+    left: 20%;
+    font-weight: bold;
+
+    transition: all 0.2s;
+}
+.formul_item_sub:hover{
+    background: #FBA919;
+    color: #FFF;
+    font-size: 1em;
+}
+.formul_item_sub:active{
+
+    transition: all 0.01s;
+    width: 65%;
+    height: 45px;
+}
+
+
+
 
 /*-------------------Estilos de footer---------------------*/
 
