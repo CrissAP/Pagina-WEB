@@ -29,6 +29,7 @@ body{
 .logo, .icon-menu{
     margin: 5px;
     color: #fff;
+    text-shadow: 0 0 10px black;
 }
 .icon-menu{
     display: block;
@@ -99,14 +100,13 @@ body{
     text-align: center;
 }
 .banner__txt{
-    display: none
+    display: none;
 }
-.registro__img{
-    position: relative;
-    width: 1000%;
-    margin-top: 50px;
-
-
+h2.banner__titulo{
+    text-shadow: 0 0 10px black;
+}
+p.banner__txt{
+    text-shadow: 0 0 10px black;
 }
 
 /*-------------------Estilos del Info---------------------*/
