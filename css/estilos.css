@@ -18,6 +18,7 @@ body{
     margin: auto;
     width: 98%
 }
+
 /*----------------  Estilos del Header  ----------------*/
 .header{
     height: 60px;
@@ -117,6 +118,24 @@ p.banner__txt{
     padding: 15px;
     margin-bottom: 30px;
 }
+.nosotros__columna{
+    background: #546e7a;
+    color: #FFF;
+    padding: 15px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+.nosotros__columna1{
+    background: #FBA919;
+    color: #FFF;
+    padding: 15px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    margin-left: 20%;
+    margin-right: 20%;
+}
 
 /*-------------------Estilos de cursos---------------------*/
 .cursos__columnas{
@@ -142,6 +161,11 @@ p.banner__txt{
 
 
 /*-------------------Estilos de formulario---------------------*/
+h2.section__titulo{
+    color: #455a64;
+
+
+}
 .registro{
 
     margin-left: auto;
@@ -152,9 +176,10 @@ p.banner__txt{
 .formul{
     width: 80%;
     margin: auto;
-    background: #FBA919;
+    background: #00b0ff;
     padding: 1%;
     border-radius: 1%;
+
 
 
 }
@@ -166,12 +191,12 @@ p.banner__txt{
     padding: 4%;
 
     text-align: center;
+    color:white;
+
 }
 .formul_item_in {
     border-radius: 14px;
-    border: 1px solid #FBA919;
-
-
+    border: 1px solid #00b0ff;
 
 }
 .formul_item_sub{
@@ -206,6 +231,7 @@ p.banner__txt{
     color: #fff;
     padding: 10px;
     text-align: center;
+    margin-top: 20px;
 }
 .footer .social [class^="icon-"] {
     display: inline-block;
