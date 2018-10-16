@@ -101,6 +101,13 @@ body{
 .banner__txt{
     display: none
 }
+.registro__img{
+    position: relative;
+    width: 1000%;
+    margin-top: 50px;
+
+
+}
 
 /*-------------------Estilos del Info---------------------*/
 
@@ -132,16 +139,23 @@ body{
     margin: 5px 0;
     
 }
-.cursos__img{
-    width: 100%;
-}
+
+
 /*-------------------Estilos de formulario---------------------*/
+.registro{
+
+    margin-left: auto;
+    margin-right: auto;
+
+
+}
 .formul{
     width: 80%;
     margin: auto;
     background: #FBA919;
     padding: 1%;
-    border-radius: 5%;
+    border-radius: 1%;
+
 
 }
 .formul_items{
@@ -156,6 +170,8 @@ body{
 .formul_item_in {
     border-radius: 14px;
     border: 1px solid #FBA919;
+
+
 
 }
 .formul_item_sub{
@@ -174,7 +190,7 @@ body{
 .formul_item_sub:hover{
     background: #00c853;
     color: #FFF;
-    border: 3px solid white;
+    border: 3px solid #00c853;
     font-size: 1em;
 }
 .formul_item_sub:active{
