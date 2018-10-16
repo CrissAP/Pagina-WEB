@@ -142,6 +142,7 @@ body{
     background: #FBA919;
     padding: 1%;
     border-radius: 5%;
+    text-align: center;
 }
 .formul_items{
     display: grid;
