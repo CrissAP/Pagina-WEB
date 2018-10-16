@@ -135,30 +135,25 @@ body{
 .cursos__img{
     width: 100%;
 }
-
-
-
+/*-------------------Estilos de formulario---------------------*/
 .formul{
-    width: 30%;
+    width: 80%;
     margin: auto;
     background: #FBA919;
     padding: 1%;
     border-radius: 5%;
-
-
 }
 .formul_items{
     display: grid;
-    grid-template-columns: repeat(2,80%);
+    grid-template-columns: repeat(4,1fr);
     grid-template-rows: repeat(14,40px) ;
     grid-gap: 3px;
-
-
+    padding: 4%;
 }
 .formul_item_in {
     border-radius: 14px;
     border: 1px solid #FBA919;
-    padding: 4%;
+
 }
 .formul_item_sub{
     border-radius: 14px;
@@ -171,7 +166,6 @@ body{
     position: relative;
     left: 20%;
     font-weight: bold;
-
     transition: all 0.2s;
 }
 .formul_item_sub:hover{
@@ -180,14 +174,10 @@ body{
     font-size: 1em;
 }
 .formul_item_sub:active{
-
     transition: all 0.01s;
     width: 65%;
     height: 45px;
 }
-
-
-
 
 /*-------------------Estilos de footer---------------------*/
 
@@ -222,11 +212,11 @@ body{
     }
     .formul_items{
     display: grid;
-    grid-template-columns: repeat(2,60%);
+    grid-template-columns: repeat(2,1fr);
     grid-template-rows: repeat(14,40px) ;
     grid-gap: 3px;
     }
-    }
+}
 
 @media(min-width:480px){
     .logo {
@@ -278,12 +268,11 @@ body{
     }
     .formul_items{
     display: grid;
-    grid-template-columns: repeat(2,60%);
+    grid-template-columns: repeat(2,1fr);
     grid-template-rows: repeat(14,40px) ;
     grid-gap: 3px;
     }
-
-    }
+}
 @media(min-width:768px){
     .banner__titulo{
         font-size: 40px;
@@ -291,7 +280,7 @@ body{
     .cursos__titulo{
         font-size: 38px;
     }
-    }
+}
 @media(min-width:1024px){
     .contenedor{
     width: 1000px
@@ -331,6 +320,12 @@ body{
     }
     .cursos__titulo{
         font-size: 50px;
+    }
+    .formul_items{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(7,40px) ;
+    grid-gap: 3px;
     }
 }
 @media(min-width:1280px){
