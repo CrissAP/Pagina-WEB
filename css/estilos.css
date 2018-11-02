@@ -179,9 +179,6 @@ h2.section__titulo{
     background: #00b0ff;
     padding: 1%;
     border-radius: 1%;
-
-
-
 }
 .formul_items{
     display: grid;
@@ -191,13 +188,22 @@ h2.section__titulo{
     padding: 4%;
 
     text-align: center;
-    color:white;
-
+    color:#00b0ff;
+    font-weight:bold;
+    background-color: white;
 }
 .formul_item_in {
     border-radius: 14px;
     border: 1px solid #00b0ff;
+    background-color: white;
+    font-weight:bold;
+    padding: 3%;
+    color:#64676b;
 
+}
+.formul_item_in:focus {
+    border-radius: 14px;
+    border: 2px solid #00c853;
 }
 .formul_item_sub{
     border-radius: 14px;

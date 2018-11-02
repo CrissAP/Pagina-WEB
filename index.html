@@ -51,22 +51,23 @@
 
                      <h2 class="section__titulo">REGISTRATE</h2>
                      <div class="formul">
-                         <form action="wwww.google.com">
+                         <form action="wwww.google.com" method="POST">
                             <div class="formul_items">
-                            <label for="rege">Registrarse:</label><input type="text"  class="formul_item_in" id="rege"/>
-                            <label for="nomb">Nombre:</label> <input type="text" class="formul_item_in"  id="nomb" />
-                            <label for="apel">Apellido: </label><input type="text"  class="formul_item_in" id="apel" />
-                            <label for="tel">Telefono:</label> <input type="text"  class="formul_item_in" id="tel" />
-                            <label for="corr">Correo:</label> <input type="text"  class="formul_item_in" id="corr" />
-                            <label for="tpar">Tipo de participante:</label> <input type="text"  class="formul_item_in" id="tpar"/>
-                            <label for="cpro">Centro de procedencia:</label><input type="text"  class="formul_item_in" id="cpro"/>
-                            <label for="dire">Direccion</label> <input type="text" class="formul_item_in"  id="dire"/>
-                            <label for="depa">Departamento:</label> <input type="text"  class="formul_item_in" id="depa"/>
-                            <label for="prov">Provincia:</label> <input type="text" class="formul_item_in"  id="prov"/>
-                            <label for="dist">Distrito:</label> <input type="text" class="formul_item_in"  id="dist" />
-                            <label for="nope">N° Operacion:</label> <input type="text" class="formul_item_in"  id="nope" />
-                            <label for="hope">Hora de operacion:</label> <input type="text"  class="formul_item_in" id="hope" />
-                            <label for="even">Evento:</label> <input type="text"  class="formul_item_in" id="even" />
+                            <label for="dni">DNI:</label><input type="number"  class="formul_item_in" id="dni" name="dni" minlength="8" maxlength="8" required />
+                            <label for="nomb">Nombre:</label> <input type="text" class="formul_item_in"  id="nomb" name="nombre" minlength="3" maxlength="40" required />
+                            <label for="apel">Apellidos: </label><input type="text"  class="formul_item_in" id="apel" name="apellidos" minlength="7" maxlength="40" required />
+                            <label for="tel">Telefono:</label> <input type="number"  class="formul_item_in" id="tel"  name="telefono" minlength="6" maxlength="9" required />
+                            <label for="corr">Correo:</label> <input type="email"  class="formul_item_in" id="corr" name="correo" required />
+                            <label for="tpar">Tipo de participante:</label><input type="text"  class="formul_item_in" id="tpar" name="tipoPart" required />
+                            <label for="cpro">Centro de procedencia:</label><input type="text"  class="formul_item_in" id="cpro" name="centroProc" minlength="5" maxlength="40" required pattern="[A-Za-z ]+" required />
+                            <label for="dire">Direccion</label> <input type="text" class="formul_item_in"  id="dire" name="direccion" minlength="5" maxlength="40" required />
+                            <label for="depa">Departamento:</label> <select class="formul_item_in" id="depa" name="departamento" onchange="llenarProvs()">
+                            </select>
+                            <label for="prov">Provincia:</label> <select class="formul_item_in"  id="prov" name="provincia" onchange="llenarDists()"></select>
+                            <label for="dist">Distrito:</label> <select class="formul_item_in"  id="dist" name="distrito" ></select>
+                            <label for="nope">N° Operacion:</label> <input type="text" class="formul_item_in"  id="nope" name="nOperacion" />
+                            <label for="hope">Hora de operacion:</label> <input type="text"  class="formul_item_in" id="hope" name="horaOperacion" />
+                            <label for="even">Evento:</label> <input type="text"  class="formul_item_in" id="even" name="evento" />
                             </div>
                             <input type="submit" value="Registrarse" class="formul_item_sub" class="btn_registrar">
                         </form>
